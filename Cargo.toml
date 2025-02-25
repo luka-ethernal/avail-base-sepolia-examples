@@ -1,0 +1,28 @@
+[package]
+name = "avail-base-sepolia-examples"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.38.0", features = ["rt-multi-thread"] }
+serde = { version = "1.0.215", features = ["derive"] }
+serde_json = { version = "1.0.132", features = ["arbitrary_precision"] }
+hex-literal = "0.4.1"
+hex = "0.4.3"
+reqwest = { version = "0.12.9", features = ["json"] }
+anyhow = "1.0.93"
+alloy-sol-types = { version = "0.8.13", features = ["json"] }
+alloy-sol-macro = { version = "0.8.13", features = ["json"] }
+alloy = { git = "https://github.com/alloy-rs/alloy", version = "0.11.1" }
+alloy-contract = { git = "https://github.com/alloy-rs/alloy", version = "0.11.1" }
+alloy-provider = { git = "https://github.com/alloy-rs/alloy", version = "0.11.1", features = [
+    "ws",
+] }
+alloy-transport-ws = { git = "https://github.com/alloy-rs/alloy", version = "0.11.1" }
+alloy-network = { git = "https://github.com/alloy-rs/alloy", version = "0.11.1" }
+alloy-rpc-types = { git = "https://github.com/alloy-rs/alloy", version = "0.11.1" }
+alloy-signer = { git = "https://github.com/alloy-rs/alloy", version = "0.11.1" }
+alloy-signer-local = { git = "https://github.com/alloy-rs/alloy", version = "0.11.1" }
+k256 = {version = "0.13.4", features = ["serde", "ecdsa-core"]}
+base64 = { version = "0.22", features = ["alloc"] }
+sha3 = "0.10.8"
